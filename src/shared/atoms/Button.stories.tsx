@@ -1,40 +1,55 @@
-import React from "react";
 import { Button } from "./Button";
+import type { Meta, StoryObj } from "@storybook/react";
 
-export default {
-  title: "Test/Button",
-  component: Button,
-  argTypes: {
-    backgroundColor: { control: "color" },
-    size: {
-      control: {
-        type: "select",
-        options: ["sm", "md", "lg"],
-      },
+const meta: Meta<typeof Button> = {
+    title: "Test/Button",
+    component: Button,
+    argTypes: {
+        backgroundColor: {
+            control: {
+                type: "select",
+                options: ["red", "blue", "green", "yellow"],
+            },
+        },
+        size: {
+            control: {
+                type: "select",
+                options: ["sm", "md", "lg"],
+            },
+        },
     },
-    onClick: { control: "onClick" },
-  },
+    args: {
+        backgroundColor: "green",
+        size: "md",
+        label: "기본 버튼",
+        onClick: () => {
+            alert("button clicked!");
+        },
+    },
 };
 
-const Template = (args) => <Button {...args} />;
+export default meta;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  label: "Button",
-  backgroundColor: "bg-blue-500",
-  size: "md",
+export const Primary: StoryObj<typeof Button> = {
+    args: {
+        backgroundColor: "blue",
+        size: "md",
+        label: "Primary Button",
+    },
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  label: "Large Button",
-  backgroundColor: "bg-green-500",
-  size: "lg",
+export const Large: StoryObj<typeof Button> = {
+    args: {
+        backgroundColor: "red",
+        size: "lg",
+        label: "Large Button",
+    },
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  label: "Small Button",
-  backgroundColor: "bg-red-500",
-  size: "sm",
+export const Small: StoryObj<typeof Button> = {
+    args: {
+        backgroundColor: "green",
+        size: "sm",
+        label: "Small Button",
+    },
 };
