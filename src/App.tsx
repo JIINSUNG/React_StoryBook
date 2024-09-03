@@ -8,7 +8,7 @@ function App() {
     <div>
       <Button label="button" backgroundColor="blue" />
       <Image src="https://picsum.photos/200/300" label="Image" />
-      <BrandCard src="https://picsum.photos/200/300" alt="Image" />
+      <BrandCard src="https://picsum.photos/200/300" alt="BrandImage" />
     </div>
   );
 }
