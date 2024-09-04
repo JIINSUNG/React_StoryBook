@@ -20,7 +20,7 @@ export const Typography: React.FC<TypographyProps> = ({
   children,
 }: TypographyProps) => {
   return (
-    <text className={twMerge(className, TypographyStyle[size])}>
+    <text className={twMerge(TypographyStyle[size], className)}>
       {children}
     </text>
   );
