@@ -14,7 +14,7 @@ export const CarouselCard: React.FC<CarouselCardProps> = ({
       <img
         src={imageSrc}
         alt={title}
-        className="w-full h-64 object-cover mb-4 rounded-lg"
+        className="w-full h-80 object-cover mb-4 rounded-lg"
       />
     </div>
   );
