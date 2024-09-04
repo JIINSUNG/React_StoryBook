@@ -15,6 +15,11 @@ export default {
         type: "number",
       },
     },
+    className: {
+      control: {
+        type: "text",
+      },
+    },
   },
   args: {
     product: "물건이름",

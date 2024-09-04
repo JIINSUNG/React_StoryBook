@@ -17,8 +17,8 @@ export const PriceCard: React.FC<PriceCardProps> = ({
   return (
     <div
       className={twMerge(
-        className,
         "flex items-center justify-between p-4 rounded-md border shadow-sm",
+        className,
       )}
     >
       <Typography size="paragraph">{product}</Typography>
