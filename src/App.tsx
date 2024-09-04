@@ -1,7 +1,7 @@
 import "./App.css";
-import { BrandCard } from "./shared/atoms/BrandCard.tsx";
-import { Button } from "./shared/atoms/Button.tsx";
-import Image from "./shared/atoms/Image.tsx";
+import { BrandCard } from "./shared/atoms/components/BrandCard.tsx";
+import { Button } from "./shared/atoms/components/Button.tsx";
+import { Image } from "./shared/atoms/components/Image.tsx";
 import "./tailwindcss.css";
 function App() {
   return (
