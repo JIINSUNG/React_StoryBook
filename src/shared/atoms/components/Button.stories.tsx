@@ -1,4 +1,4 @@
-import { Button, ButtonProps } from "./Button";
+import { Button, ButtonProps } from "./Button.tsx";
 import type { StoryObj, Meta, StoryFn } from "@storybook/react";
 
 export default {
@@ -15,6 +15,11 @@ export default {
       control: {
         type: "select",
         options: ["sm", "md", "lg"],
+      },
+    },
+    label: {
+      control: {
+        type: "text",
       },
     },
   },
