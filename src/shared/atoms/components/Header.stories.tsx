@@ -1,4 +1,4 @@
-import { Header, HeaderProps } from "./Header";
+import { Header, HeaderProps } from "./Header.tsx";
 import type { StoryObj, Meta, StoryFn } from "@storybook/react";
 
 export default {

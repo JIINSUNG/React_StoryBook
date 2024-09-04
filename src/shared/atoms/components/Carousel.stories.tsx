@@ -25,21 +25,9 @@ export default {
 
 const Template: StoryFn<CarouselProps> = (args: CarouselProps) => (
   <Carousel {...args}>
-    <CarouselCard
-      imageSrc="https://via.placeholder.com/300x150"
-      title="Ad 1"
-      description="This is the first ad."
-    />
-    <CarouselCard
-      imageSrc="https://via.placeholder.com/300x150"
-      title="Ad 2"
-      description="This is the second ad."
-    />
-    <CarouselCard
-      imageSrc="https://via.placeholder.com/300x150"
-      title="Ad 3"
-      description="This is the third ad."
-    />
+    <CarouselCard imageSrc="https://via.placeholder.com/300x150" title="Ad 1" />
+    <CarouselCard imageSrc="https://via.placeholder.com/300x150" title="Ad 2" />
+    <CarouselCard imageSrc="https://via.placeholder.com/300x150" title="Ad 3" />
   </Carousel>
 );
 
