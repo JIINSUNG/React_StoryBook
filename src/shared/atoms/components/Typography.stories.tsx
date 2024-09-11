@@ -8,7 +8,7 @@ export default {
     size: {
       control: {
         type: "select",
-        options: ["head", "subhead", "paragraph"],
+        options: ["head", "subhead", "paragraph", "title"],
       },
     },
     children: {
@@ -37,6 +37,12 @@ export const SubHead: StoryObj<typeof Typography> = Template.bind({});
 SubHead.args = {
   size: "subhead",
   children: "SubHead",
+};
+
+export const Title: StoryObj<typeof Typography> = Template.bind({});
+Title.args = {
+  size: "title",
+  children: "Title",
 };
 
 export const Paragraph: StoryObj<typeof Typography> = Template.bind({});
