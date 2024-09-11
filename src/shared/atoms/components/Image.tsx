@@ -4,7 +4,7 @@ import { Typography } from "./Typography.tsx";
 
 export type ImageProps = {
   src: string;
-  label: string;
+  label?: string;
   shape?: "circle" | "square";
   size?: "logo" | "avatar";
   labelDisplay?: boolean;
@@ -25,7 +25,6 @@ export const Image: React.FC<ImageProps> = ({
   label,
   size = "logo",
   shape = "circle",
-  labelDisplay = true,
 }) => {
   return (
     <div className="flex flex-col items-center">
@@ -34,7 +33,7 @@ export const Image: React.FC<ImageProps> = ({
         alt={label ?? "Image"}
         className={twMerge(sizeStyle[size], "object-cover", shapeStyle[shape])}
       />
-      {labelDisplay && (
+      {label && (
         <Typography className="mt-2 text-center" size="title">
           {label}
         </Typography>
